@@ -16,7 +16,7 @@ A full-stack MERN application designed to bridge the gap between college clubs a
 
 - **Frontend**: React.js (Hooks, Context API, Router) 
 - **Backend**: Node.js & Express.js Database: MongoDB (Managed via MongoDB Compass)
-- 
+  
 ## Installation & Setup
 Follow these steps to get the project running on your local machine.
 
