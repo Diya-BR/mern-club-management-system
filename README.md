@@ -1,12 +1,42 @@
-# React + Vite
+# College Club Management Portal
+A full-stack MERN application designed to bridge the gap between college clubs and students. This portal allows students to discover campus activities, register for events, and manage their participation through a personalized, real-time dashboard.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Key Features
+- **User Authentication**: Secure Sign Up and Login system with persistent sessions using LocalStorage and the React Context API.
 
-Currently, two official plugins are available:
+- **Event Discovery**: Browse a dynamic list of upcoming club events with real-time registration status.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Personal Dashboard (MyEvents)**: A private, filtered view for logged-in users to track and manage all events they have successfully registered for.
 
-## Expanding the ESLint configuration
+- **Dynamic UI Logic**: Responsive design with complex conditional rendering (e.g., automatically switching between "Register" and "Already Registered" states based on user data).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **RESTful API**: Robust backend integration for managing CRUD operations on user profiles and event registrations.
+
+## Tech Stack
+
+- **Frontend**: React.js (Hooks, Context API, Router) 
+- **Backend**: Node.js & Express.js Database: MongoDB (Managed via MongoDB Compass)
+- 
+## Installation & Setup
+Follow these steps to get the project running on your local machine.
+
+1. **Database Configuration**
+    - Open MongoDB Compass.
+    - Connect to your local or remote cluster.
+    - Ensure your database and collections (Users, Events) are initialized.
+
+2. **Clone the repository**
+   git clone https://github.com/Diya-BR/mern-club-management-system.git
+   cd mern-club-management-system
+
+3. **Start the Backend**
+   - Navigate to the backend folder: cd backend
+   - Install dependencies: npm install
+   - Start the server:
+     node backend.js
+
+4. **Start the Frontend**
+   - Open a new terminal and navigate to the frontend folder: cd frontend
+   - Install dependencies: npm install
+   - Start the development server:
+     npm run dev
